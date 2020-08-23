@@ -64,7 +64,10 @@
                 //Generate 4 digit pin.
                 function generatePin() {
                     const randomNumber = Math.floor(1000 + Math.random() * 9000);
-                    document.getElementById('generate-pin').value = randomNumber
+                    document.getElementById('generate-pin').value = randomNumber;
+                    document.getElementById('try-it').innerText = 3;
+                    // document.getElementById('dialpad_input').value = ''
+
                 }
 
                 //Show display dialed all degit
